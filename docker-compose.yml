@@ -1,0 +1,12 @@
+version: '3'
+services:
+  back:
+    build:
+      context: ./GeomatysClip
+    ports:
+      - "8080:8080"
+  front:
+    build:
+      context: ./GeomatysClipFront
+    ports:
+      - "4200:4200"
