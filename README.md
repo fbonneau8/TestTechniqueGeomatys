@@ -27,6 +27,10 @@ Le problème est que pour cela, il faut entrer une carte bleue même si on n'y d
 Vous allez me poser la question : alors pourquoi github ? c'est la seule plateforme où on peut déposer des répertoires entiers sans passer par git.
 (je travaille sur mon ordi de boulot et je ne voulais que les 2 repository git se mélangent)
 
+## Parti pris
+J'ai fait en sorte que la sélection du clip se fasse sur une image redimensionné pour plus de faciliter à l'écran par contre le résultat du clip est en taille réelle.  
+Donc si c'est tres grande image de base, il est possible que le clip soit même plus grand que l'image redimensionnée de gauche.
+
 ## Exécution
 Télécharger le projet en local et se mettre à la racine  
 ```
