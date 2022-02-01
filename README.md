@@ -27,10 +27,10 @@ Le problème est que pour cela, il faut entrer une carte bleue même si on n'y d
 Vous allez me poser la question : alors pourquoi github ? c'est la seule plateforme où on peut déposer des répertoires entiers sans passer par git.
 (je travaille sur mon ordi de boulot et je ne voulais que les 2 repository git se mélangent)
 
-### Execution
+## Exécution
 Télécharger le projet en local et se mettre à la racine  
 ```
-docker-compose build .  
-docker-compose up  
+docker-compose build
+docker-compose up
 ```
 l'application se lance sur http://localhost:4200  
