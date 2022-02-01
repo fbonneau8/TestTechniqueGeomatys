@@ -1,0 +1,25 @@
+<svg id="canvas" class="canvas"
+     (mousedown)="startDrawing($event)"
+     (mouseup)="stopDrawing()"
+     (mousemove)="keepDrawing($event)"
+>
+
+      <image id="imageCanvas" href="" x="0" y="0" width="800" />
+
+
+    <rect class="rectangle" *ngIf="rectangleDrawing!==undefined && rectangleDrawing!==null"
+          [style.stroke-width]="1"
+          [attr.x]="rectangleDrawing.coordinatesUpperLeft.x"
+          [attr.y]="rectangleDrawing.coordinatesUpperLeft.y"
+          [attr.width]="rectangleDrawing.length"
+          [attr.height]="rectangleDrawing.height"></rect>
+
+  <rect class="rectangle" *ngIf="lastRectangleDrawn!==undefined && lastRectangleDrawn!==null"
+        [style.stroke-width]="1"
+        [attr.x]="lastRectangleDrawn.coordinatesUpperLeft.x"
+        [attr.y]="lastRectangleDrawn.coordinatesUpperLeft.y"
+        [attr.width]="lastRectangleDrawn.length"
+        [attr.height]="lastRectangleDrawn.height"></rect>
+
+</svg>
+

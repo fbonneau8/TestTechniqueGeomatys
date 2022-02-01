@@ -1,0 +1,32 @@
+
+<div class="title"><h2>Test technique pour Geomatys : clip d'une image</h2></div>
+
+<br/>
+Selectionnez un fichier puis selectionnez un zone de l'image à rogner
+<form [formGroup]="clipForm" (ngSubmit)="submit()">
+  <input type="file"
+         id="imageToClipInput" name="imageToClipInput"
+         accept="image/jpeg" (change)="onFileChange($event)">
+  <br/>
+  <button class="btn btn-primary" type="submit" [disabled]="!lastRectangleDrawn || !fileUploaded">Rogner</button>
+</form>
+
+
+<ejs-splitter #horizontal width='100%' >
+  <e-panes>
+    <e-pane size='50%'>
+      <ng-template #content>
+        <div>
+          <app-canvas [currentRectangle]="currentRectangle" [imageToClip]="imageToClip"></app-canvas>
+        </div>
+      </ng-template>
+    </e-pane>
+    <e-pane size='50%'>
+      <ng-template #content>
+        <div>
+          <img id="imageClipped" [src]="imageClipped" >
+        </div>
+      </ng-template>
+    </e-pane>
+  </e-panes>
+</ejs-splitter>
