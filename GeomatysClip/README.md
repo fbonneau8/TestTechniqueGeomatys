@@ -8,3 +8,8 @@ But with this, you can only send key-value string pair.
 So i chose to send my rectangle Object as Json in one field.
 
 Nothing complicated here, the method BufferedImage.subimage() does all the work.
+
+## What could be improve
+- add unit test
+- build a swagger documentation
+- real MVC pattern with interface/implementation pattern
